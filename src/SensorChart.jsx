@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -32,6 +32,7 @@ const SensorChart = ({ data, title, color, onHover }) => {
         borderColor: color || "blue",
         borderWidth: 2,
         fill: false,
+        spanGaps: true, // Ensure all points are connected
         pointRadius: 5, // Make data points detectable
         pointHoverRadius: 8, // On hover, make points larger for better interactivity
       },
