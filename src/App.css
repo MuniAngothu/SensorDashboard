@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1f1f1f, #2e2e2e); /* Dark gradient background */
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.dashboard-title {
+  font-size: 2.8rem;
+  color: #ffeb3b;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(255, 255, 0, 0.5);
+}
+
+.charts-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+}
+
+.chart {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.chart:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+  background-color: #444444;
+}
+
+/* Left Side Data Display */
+.data-display-left {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  max-height: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.data-display-left h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.data-display-left p {
+  margin: 5px 0;
+}
+
+/* Right Side Data Display (Health Alerts) */
+.data-display-right {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 10px;
+  width: 220px;
+  max-height: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.data-display-right h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.data-display-right p {
+  margin: 5px 0;
+}
+
+.alert {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.alert-info {
+  background-color: #4caf50;
+}
+
+.alert-warning {
+  background-color: #ff9800;
+}
+
+.alert-danger {
+  background-color: #f44336;
+}
