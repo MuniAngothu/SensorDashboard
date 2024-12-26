@@ -3,7 +3,7 @@ import SensorChart from "./SensorChart";
 import useFetchSensorData from "./useFetchSensorData";
 import { prepareChartData } from "./dataUtils";
 import { motion } from "framer-motion"; // For animations
-import "./app.css";
+import "./App.css";
 
 const App = () => {
   const apiUrl = "https://api.thingspeak.com/channels/1596152/feeds.json?results=40";
