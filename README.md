@@ -11,7 +11,7 @@ This is a **Sensor Dashboard** built with **React**, **Framer Motion** for anima
 ## Tech Stack
 - **React** for frontend development.
 - **Framer Motion** for animations.
-- **Charting Library** (assumed `react-chartjs-2` or similar for the charts).
+- **Charting Library**  `react-chartjs-2` .
 - **CSS** for styling.
 - **Thingspeak API** for fetching real-time sensor data.
 
