@@ -27,5 +27,5 @@ Make sure you have the following installed:
 git clone https://github.com/yourusername/sensor-dashboard.git
 cd sensor-dashboard
 
-**Live Project Link: **https://muni17.netlify.app/
+**Live Project Link:** https://muni17.netlify.app/
 
